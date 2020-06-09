@@ -46,8 +46,7 @@ namespace SavacFarma.Server
                     ClockSkew = TimeSpan.Zero
                 }
                 ) ;
-            //usando swagger
-
+            //Usando swagger
             services.AddSwaggerDocumentation();
 
         }
