@@ -1,0 +1,60 @@
+﻿@page "/counter"
+@inject HttpClient Http
+@inject IRepositorio repositorio
+@inject IToastService toastService
+
+        <h1>Counter</h1>
+
+        <p>Current count: @currentCount</p>
+        <br />
+        <DisplayName For="@(()=>userInfo.Usuario)">
+
+        </DisplayName>
+        <input @bind="userInfo.Usuario" />
+
+        <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+    
+    @code {
+        
+
+        int currentCount = 0;
+
+        UserInfo userInfo;
+        protected override void OnInitialized()
+        {
+            userInfo = new UserInfo() { Usuario = "jjj", Password = "77" };
+        }
+
+        async Task IncrementCount()
+        {
+            currentCount++;
+            //await GetProcesses();
+        }
+
+        List<Process> processes;
+
+        //async Task GetProcesses()
+        //{
+        //    //forecasts = await ForecastService.GetForecastListAsync(DateTime.Now);
+
+        //    //var httpResponse = await repositorio.Get<List<WeatherForeCast>>("api/Weather/filterTemp?maxTemp=50&minTemp=5");
+        //    var httpResponse = await repositorio.Get<List<Process>>("api/Processes");
+        //    if (httpResponse.Error)
+        //    {
+        //        var body = httpResponse.HttpResponseMessage.Content.ReadAsStringAsync();
+        //        Console.WriteLine(body);
+
+        //    }
+        //    else
+        //    {
+        //        processes = httpResponse.Response;
+        //        List<MenuItem> menuItems = new List<MenuItem>();
+        //        foreach (var item in processes)
+        //        {
+        //            menuItems.Add(
+        //                new MenuItem() { Text = item.DesProcess, Tipo = item.ProcessType }
+        //                );
+        //        }
+        //    }
+        //}
+    }

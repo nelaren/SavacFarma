@@ -1,0 +1,1494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Category" xml:space="preserve">
+    <value>Categoria</value>
+  </data>
+  <data name="CodGroup" xml:space="preserve">
+    <value>Codi grup</value>
+  </data>
+  <data name="CodRole" xml:space="preserve">
+    <value>Codi rol</value>
+  </data>
+  <data name="ColleNumber" xml:space="preserve">
+    <value>Núm. Col·legiat</value>
+  </data>
+  <data name="ComplementaryExamination" xml:space="preserve">
+    <value>Exploracions complementàries</value>
+  </data>
+  <data name="CreatedBy" xml:space="preserve">
+    <value>Creat per</value>
+  </data>
+  <data name="CurrentDisease" xml:space="preserve">
+    <value>Malaltia actual</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Descripció</value>
+  </data>
+  <data name="EffectiveDateEnd" xml:space="preserve">
+    <value>Data de finalització</value>
+  </data>
+  <data name="EffectiveDateHome" xml:space="preserve">
+    <value>Data d'inici</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>Data de Fi</value>
+  </data>
+  <data name="EndDatePass" xml:space="preserve">
+    <value>Data fi de la contrasenya</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Grup</value>
+  </data>
+  <data name="IndChronic" xml:space="preserve">
+    <value>Ind. crònic</value>
+  </data>
+  <data name="Isolation" xml:space="preserve">
+    <value>Aïllament</value>
+  </data>
+  <data name="IsolationReason" xml:space="preserve">
+    <value>Motiu d'aïllament</value>
+  </data>
+  <data name="IsolationType" xml:space="preserve">
+    <value>Tipus d'aïllament</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Cognom</value>
+  </data>
+  <data name="PathologicalHistory" xml:space="preserve">
+    <value>Antecedents patològics</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>Departament</value>
+  </data>
+  <data name="StaffAdded" xml:space="preserve">
+    <value>Metge (alta)</value>
+  </data>
+  <data name="StaffUnsubscribed" xml:space="preserve">
+    <value>Metge (baixa)</value>
+  </data>
+  <data name="DepositionalHabit" xml:space="preserve">
+    <value>Hàbit deposicional</value>
+  </data>
+  <data name="Diet" xml:space="preserve">
+    <value>Dieta</value>
+  </data>
+  <data name="Lactation" xml:space="preserve">
+    <value>Lactància</value>
+  </data>
+  <data name="Menarche" xml:space="preserve">
+    <value>Menarquia</value>
+  </data>
+  <data name="Menopause" xml:space="preserve">
+    <value>Menopausa</value>
+  </data>
+  <data name="MenstrualCycle" xml:space="preserve">
+    <value>Cicle menstrual</value>
+  </data>
+  <data name="Parity" xml:space="preserve">
+    <value>Paritat</value>
+  </data>
+  <data name="VoidingHabit" xml:space="preserve">
+    <value>Hàbit miccional</value>
+  </data>
+  <data name="UsualTreat" xml:space="preserve">
+    <value>Tractament habitual</value>
+  </data>
+  <data name="NurrseTask" xml:space="preserve">
+    <value>Tasca d'infermeria</value>
+  </data>
+  <data name="VitalSignValue" xml:space="preserve">
+    <value>Valor tasca</value>
+  </data>
+  <data name="AbdominalDescripcion" xml:space="preserve">
+    <value>Descripció abdominal</value>
+  </data>
+  <data name="CardioDescripcion" xml:space="preserve">
+    <value>Descripció cardiovascular</value>
+  </data>
+  <data name="GeneralDescripcion" xml:space="preserve">
+    <value>Descripció general</value>
+  </data>
+  <data name="LocomotorDescripcion" xml:space="preserve">
+    <value>Descripció locomotora</value>
+  </data>
+  <data name="NeurologicalDescripcion" xml:space="preserve">
+    <value>Descripció neurològica</value>
+  </data>
+  <data name="OthersDescripcion" xml:space="preserve">
+    <value>Altres descripcions</value>
+  </data>
+  <data name="RespiratoryDescripcion" xml:space="preserve">
+    <value>Descripció respiratòria</value>
+  </data>
+  <data name="DescPathBack" xml:space="preserve">
+    <value>Detall</value>
+  </data>
+  <data name="Answer" xml:space="preserve">
+    <value>Resposta</value>
+  </data>
+  <data name="FreeText" xml:space="preserve">
+    <value>Text lliure</value>
+  </data>
+  <data name="DescQuestion" xml:space="preserve">
+    <value>Pregunta</value>
+  </data>
+  <data name="SavingChangesGetSequence" xml:space="preserve">
+    <value>El camp no existeix</value>
+  </data>
+  <data name="Sex" xml:space="preserve">
+    <value>Sexe</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>Plantilla</value>
+  </data>
+  <data name="TemplateType" xml:space="preserve">
+    <value>Tipus plantilla</value>
+  </data>
+  <data name="TextTemplate" xml:space="preserve">
+    <value>Text plantilla</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>Ordre</value>
+  </data>
+  <data name="AfternoonDose" xml:space="preserve">
+    <value>Dosi tarda</value>
+  </data>
+  <data name="AnamnesisStatus" xml:space="preserve">
+    <value>Estat d'anamnesi</value>
+  </data>
+  <data name="DescUsualTheat" xml:space="preserve">
+    <value>Detall tractament</value>
+  </data>
+  <data name="LastUpdate" xml:space="preserve">
+    <value>Data d'actualització</value>
+  </data>
+  <data name="MedicalAnamnesis" xml:space="preserve">
+    <value>Metge d'anamnesi</value>
+  </data>
+  <data name="MorningDose" xml:space="preserve">
+    <value>Dosi matí</value>
+  </data>
+  <data name="NightDose" xml:space="preserve">
+    <value>Dosi nit</value>
+  </data>
+  <data name="ServiceList" xml:space="preserve">
+    <value>Departaments del metge</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Direcció</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="DescRelationship" xml:space="preserve">
+    <value>Relació</value>
+  </data>
+  <data name="FormattedName" xml:space="preserve">
+    <value>Nom responsable</value>
+  </data>
+  <data name="LandLine" xml:space="preserve">
+    <value>Telèfon fix</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Mòbil</value>
+  </data>
+  <data name="Province" xml:space="preserve">
+    <value>Província</value>
+  </data>
+  <data name="CourseDraft" xml:space="preserve">
+    <value>Possibilitat d'esborrany</value>
+  </data>
+  <data name="CourseOrder" xml:space="preserve">
+    <value>Ordre descendent</value>
+  </data>
+  <data name="DescTypeCourse" xml:space="preserve">
+    <value>Descripció del tipus</value>
+  </data>
+  <data name="AdditionalExamination" xml:space="preserve">
+    <value>Exploració complementària</value>
+  </data>
+  <data name="Record" xml:space="preserve">
+    <value>Registre</value>
+  </data>
+  <data name="Questionnaire" xml:space="preserve">
+    <value>Qüestionari</value>
+  </data>
+  <data name="PlanDate" xml:space="preserve">
+    <value>Data planificació</value>
+  </data>
+  <data name="Staff" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+  <data name="CloseDate" xml:space="preserve">
+    <value>Data tancament</value>
+  </data>
+  <data name="IndexValue" xml:space="preserve">
+    <value>Valor índex</value>
+  </data>
+  <data name="Index" xml:space="preserve">
+    <value>Índex</value>
+  </data>
+  <data name="CodificationDate" xml:space="preserve">
+    <value>Data codificació</value>
+  </data>
+  <data name="CodProcedure" xml:space="preserve">
+    <value>Codi procediment</value>
+  </data>
+  <data name="Diagnostic" xml:space="preserve">
+    <value>Diagnòstic</value>
+  </data>
+  <data name="ExtCause" xml:space="preserve">
+    <value>Causa externa</value>
+  </data>
+  <data name="ExtCauseDate" xml:space="preserve">
+    <value>Data ext. causa</value>
+  </data>
+  <data name="ProcDate" xml:space="preserve">
+    <value>Data procediment</value>
+  </data>
+  <data name="Procedure" xml:space="preserve">
+    <value>Procediment</value>
+  </data>
+  <data name="Main" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+  <data name="Alcohol" xml:space="preserve">
+    <value>Alcohol</value>
+  </data>
+  <data name="CodDiagnostic" xml:space="preserve">
+    <value>Codi diagnòstic</value>
+  </data>
+  <data name="CodExtCause" xml:space="preserve">
+    <value>Codi causa externa</value>
+  </data>
+  <data name="AgeFrom" xml:space="preserve">
+    <value>Edat desde</value>
+  </data>
+  <data name="AgeTo" xml:space="preserve">
+    <value>Edat fins</value>
+  </data>
+  <data name="GraphicalColor" xml:space="preserve">
+    <value>Color per gràfic</value>
+  </data>
+  <data name="GraphicalStyle" xml:space="preserve">
+    <value>Estil gràfic</value>
+  </data>
+  <data name="MaxValue" xml:space="preserve">
+    <value>Valor màxim</value>
+  </data>
+  <data name="MaxValueAlert" xml:space="preserve">
+    <value>Alerta de valor màxim</value>
+  </data>
+  <data name="MaxValueRef" xml:space="preserve">
+    <value>Valor màxim de referència</value>
+  </data>
+  <data name="MinValue" xml:space="preserve">
+    <value>Valor mínim</value>
+  </data>
+  <data name="MinValueAlert" xml:space="preserve">
+    <value>Alerta de valor mínim</value>
+  </data>
+  <data name="MinValueRef" xml:space="preserve">
+    <value>Valor mínim de referència</value>
+  </data>
+  <data name="NurseUnit" xml:space="preserve">
+    <value>Unitat d'infermeria</value>
+  </data>
+  <data name="NumDecimal" xml:space="preserve">
+    <value>Decimals</value>
+  </data>
+  <data name="NursingTaskMeasureUnit" xml:space="preserve">
+    <value>Unitat de mesura</value>
+  </data>
+  <data name="OtherHabits" xml:space="preserve">
+    <value>Altres hàbits</value>
+  </data>
+  <data name="NursingTaskValue" xml:space="preserve">
+    <value>Valor de la tasca d'infermeria</value>
+  </data>
+  <data name="NursingTaskValueType" xml:space="preserve">
+    <value>Tipus</value>
+  </data>
+  <data name="Smoke" xml:space="preserve">
+    <value>Fuma</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Tipus</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>Observacions</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Durada</value>
+  </data>
+  <data name="Frequency" xml:space="preserve">
+    <value>Freqüència</value>
+  </data>
+  <data name="BeginDate" xml:space="preserve">
+    <value>Data d'inici</value>
+  </data>
+  <data name="Periodicity" xml:space="preserve">
+    <value>Periodicitat</value>
+  </data>
+  <data name="Protocol" xml:space="preserve">
+    <value>Protocol</value>
+  </data>
+  <data name="TreatmentPlan" xml:space="preserve">
+    <value>Pla</value>
+  </data>
+  <data name="WorkingPastHealth" xml:space="preserve">
+    <value>Antecedents laborals</value>
+  </data>
+  <data name="VisitReason" xml:space="preserve">
+    <value>Motiu de consulta</value>
+  </data>
+  <data name="DayCycles" xml:space="preserve">
+    <value>Dia/Cicle</value>
+  </data>
+  <data name="Displacement" xml:space="preserve">
+    <value>Desplaçament</value>
+  </data>
+  <data name="NumCycles" xml:space="preserve">
+    <value>N. Cicles</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="OtherItem" xml:space="preserve">
+    <value>Ítem</value>
+  </data>
+  <data name="Default" xml:space="preserve">
+    <value>Per defecte</value>
+  </data>
+  <data name="AlertPriorityLevel" xml:space="preserve">
+    <value>Nivell</value>
+  </data>
+  <data name="AlertPriority" xml:space="preserve">
+    <value>Prioritat</value>
+  </data>
+  <data name="AlertPriorityColor" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="Alert" xml:space="preserve">
+    <value>Alerta</value>
+  </data>
+  <data name="AlertText" xml:space="preserve">
+    <value>Alerta de text</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Prioritat</value>
+  </data>
+  <data name="CurrentLocation" xml:space="preserve">
+    <value>Ubicació assignada</value>
+  </data>
+  <data name="Mrn" xml:space="preserve">
+    <value>Número d'història</value>
+  </data>
+  <data name="Patient" xml:space="preserve">
+    <value>Pacient</value>
+  </data>
+  <data name="HomeButton" xml:space="preserve">
+    <value>Barra de menú</value>
+  </data>
+  <data name="HomeButtonCallSentence" xml:space="preserve">
+    <value>Trucada externa</value>
+  </data>
+  <data name="HomeButtonUrl" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="DigestiveHabits" xml:space="preserve">
+    <value>Hàbits digestius</value>
+  </data>
+  <data name="PhysicalExercise" xml:space="preserve">
+    <value>Exercici físic</value>
+  </data>
+  <data name="SleepHabits" xml:space="preserve">
+    <value>Hàbits de son </value>
+  </data>
+  <data name="Dose" xml:space="preserve">
+    <value>Dosi</value>
+  </data>
+  <data name="ButtonSetComponent" xml:space="preserve">
+    <value>Configuració barra de menú per component</value>
+  </data>
+  <data name="TotalVol" xml:space="preserve">
+    <value>Volum total</value>
+  </data>
+  <data name="AucValue" xml:space="preserve">
+    <value>AUC</value>
+  </data>
+  <data name="ValueDate" xml:space="preserve">
+    <value>Data del valor</value>
+  </data>
+  <data name="DateAddHistory" xml:space="preserve">
+    <value>Data de conversió a històric</value>
+  </data>
+  <data name="ProductDescription" xml:space="preserve">
+    <value>Producte</value>
+  </data>
+  <data name="Concept" xml:space="preserve">
+    <value>Concepte</value>
+  </data>
+  <data name="MaxValidate" xml:space="preserve">
+    <value>Validació màxima</value>
+  </data>
+  <data name="MinValidate" xml:space="preserve">
+    <value>Validació mínima</value>
+  </data>
+  <data name="Languaje" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="DocID" xml:space="preserve">
+    <value>DNI</value>
+  </data>
+  <data name="DocType" xml:space="preserve">
+    <value>Tipus documento</value>
+  </data>
+  <data name="AgreedUnits" xml:space="preserve">
+    <value>Unitats pactades</value>
+  </data>
+  <data name="CodInt" xml:space="preserve">
+    <value>Codi intern</value>
+  </data>
+  <data name="CodNat" xml:space="preserve">
+    <value>Cod. Nac.</value>
+  </data>
+  <data name="NoDisp" xml:space="preserve">
+    <value>No reposar</value>
+  </data>
+  <data name="UnitsReq" xml:space="preserve">
+    <value>Unitats demanades</value>
+  </data>
+  <data name="DispensedUnits" xml:space="preserve">
+    <value>Unitats dispensades</value>
+  </data>
+  <data name="Doctor" xml:space="preserve">
+    <value>Doctor</value>
+  </data>
+  <data name="Pact" xml:space="preserve">
+    <value>Pacte</value>
+  </data>
+  <data name="RecipeNumber" xml:space="preserve">
+    <value>Número de receptari</value>
+  </data>
+  <data name="Intervention" xml:space="preserve">
+    <value>Intervenció</value>
+  </data>
+  <data name="HomeButtonParam" xml:space="preserve">
+    <value>Paràmetres obligatoris</value>
+  </data>
+  <data name="Roa" xml:space="preserve">
+    <value>Via d'administració</value>
+  </data>
+  <data name="PatientDataRefAgeFrom" xml:space="preserve">
+    <value>Desde (anys)</value>
+  </data>
+  <data name="PatientDataRefAgeTo" xml:space="preserve">
+    <value>Fins (anys)</value>
+  </data>
+  <data name="PatientDataRefMaxAlert" xml:space="preserve">
+    <value>Alerta màxima</value>
+  </data>
+  <data name="PatientDataRefMaxValue" xml:space="preserve">
+    <value>Màxima validació</value>
+  </data>
+  <data name="PatientDataRefMinAlert" xml:space="preserve">
+    <value>Alerta mínima</value>
+  </data>
+  <data name="PatientDataRefMinValue" xml:space="preserve">
+    <value>Mínima validació</value>
+  </data>
+  <data name="Always" xml:space="preserve">
+    <value>Sempre</value>
+  </data>
+  <data name="Never" xml:space="preserve">
+    <value>Mai</value>
+  </data>
+  <data name="AssistanceType" xml:space="preserve">
+    <value>Tipus d'assistència</value>
+  </data>
+  <data name="RequestingUser" xml:space="preserve">
+    <value>Usuari sol·licitant</value>
+  </data>
+  <data name="GroupName" xml:space="preserve">
+    <value>Nom del grup</value>
+  </data>
+  <data name="ByDpto" xml:space="preserve">
+    <value>Per departament</value>
+  </data>
+  <data name="Indications" xml:space="preserve">
+    <value>Indicacions</value>
+  </data>
+  <data name="therapeuticgroup" xml:space="preserve">
+    <value>Grup Terapèutic</value>
+  </data>
+  <data name="DosageByAUC" xml:space="preserve">
+    <value>Dosis AUC (mg)</value>
+  </data>
+  <data name="DisplacementHours" xml:space="preserve">
+    <value>Hores de desplaçament</value>
+  </data>
+  <data name="DisplacementDays" xml:space="preserve">
+    <value>Dies de desplaçament</value>
+  </data>
+  <data name="ProvidedByPatient" xml:space="preserve">
+    <value>Aporta pacient</value>
+  </data>
+  <data name="Repetition" xml:space="preserve">
+    <value>Repetició</value>
+  </data>
+  <data name="Agenda" xml:space="preserve">
+    <value>Agenda</value>
+  </data>
+  <data name="AnswerList" xml:space="preserve">
+    <value>Llistat de respostes</value>
+  </data>
+  <data name="DragResponse" xml:space="preserve">
+    <value>Arrossegar resposta</value>
+  </data>
+  <data name="Groupable" xml:space="preserve">
+    <value>Agrupables</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Obligatori</value>
+  </data>
+  <data name="ResponseType" xml:space="preserve">
+    <value>Tipus de resposta</value>
+  </data>
+  <data name="TimeLinking" xml:space="preserve">
+    <value>Temps de vinculació</value>
+  </data>
+  <data name="HomeButtonComponent" xml:space="preserve">
+    <value>Barra de menú per component</value>
+  </data>
+  <data name="Restrictions" xml:space="preserve">
+    <value>Restriccions</value>
+  </data>
+  <data name="ListSource" xml:space="preserve">
+    <value>Llistat original</value>
+  </data>
+  <data name="AnswerCodeField" xml:space="preserve">
+    <value>Camp codi resposta</value>
+  </data>
+  <data name="AnswerDescriptionField" xml:space="preserve">
+    <value>Camp descripció resposta</value>
+  </data>
+  <data name="AnswerOrderByClause" xml:space="preserve">
+    <value>Ordenat per</value>
+  </data>
+  <data name="AnswerWhereClause" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="DatabaseObjectSource" xml:space="preserve">
+    <value>Origen de l'objecte de la base de dades </value>
+  </data>
+  <data name="ComboSource" xml:space="preserve">
+    <value>Origen combo</value>
+  </data>
+  <data name="ImageSource" xml:space="preserve">
+    <value>Origen de l' imatge</value>
+  </data>
+  <data name="ListType" xml:space="preserve">
+    <value>Tipus de llista</value>
+  </data>
+  <data name="IsLinked" xml:space="preserve">
+    <value>Relacionat</value>
+  </data>
+  <data name="Mandatory" xml:space="preserve">
+    <value>Obligatori</value>
+  </data>
+  <data name="TabIndex" xml:space="preserve">
+    <value>Ordre tabulació</value>
+  </data>
+  <data name="Ambit" xml:space="preserve">
+    <value>Àmbit</value>
+  </data>
+  <data name="Background" xml:space="preserve">
+    <value>Fons</value>
+  </data>
+  <data name="Horizontal" xml:space="preserve">
+    <value>Horitzontal</value>
+  </data>
+  <data name="Layout" xml:space="preserve">
+    <value>Disseny</value>
+  </data>
+  <data name="Multiline" xml:space="preserve">
+    <value>Multilínia</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Mida</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="Vertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>Ample</value>
+  </data>
+  <data name="Alignment" xml:space="preserve">
+    <value>Alineament</value>
+  </data>
+  <data name="Column" xml:space="preserve">
+    <value>Columna</value>
+  </data>
+  <data name="Row" xml:space="preserve">
+    <value>Fila</value>
+  </data>
+  <data name="LabelVisible" xml:space="preserve">
+    <value>Etiqueta visible</value>
+  </data>
+  <data name="Margin" xml:space="preserve">
+    <value>Marge</value>
+  </data>
+  <data name="Position" xml:space="preserve">
+    <value>Posició</value>
+  </data>
+  <data name="RowSpan" xml:space="preserve">
+    <value>Salt de fila</value>
+  </data>
+  <data name="Tooltip" xml:space="preserve">
+    <value>Tooltip</value>
+  </data>
+  <data name="InitialFocus" xml:space="preserve">
+    <value>Punt d'inici</value>
+  </data>
+  <data name="DiagnosticApproach" xml:space="preserve">
+    <value>Orientació diagnòstica</value>
+  </data>
+  <data name="FailPass" xml:space="preserve">
+    <value>N. Intents paraula de pas </value>
+  </data>
+  <data name="GenUser" xml:space="preserve">
+    <value>Usuari genèric</value>
+  </data>
+  <data name="HasUser" xml:space="preserve">
+    <value>Te usuari?</value>
+  </data>
+  <data name="IdExt" xml:space="preserve">
+    <value>Identificació externa</value>
+  </data>
+  <data name="IdStaff" xml:space="preserve">
+    <value>Identificació personal</value>
+  </data>
+  <data name="LastName2" xml:space="preserve">
+    <value>Cognom 2</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Inici de sessió:</value>
+  </data>
+  <data name="Signature" xml:space="preserve">
+    <value>Firma</value>
+  </data>
+  <data name="Drugs" xml:space="preserve">
+    <value>Drogues</value>
+  </data>
+  <data name="ProcessDescription" xml:space="preserve">
+    <value>Descripció del procés</value>
+  </data>
+  <data name="DateCourse" xml:space="preserve">
+    <value>Data curs</value>
+  </data>
+  <data name="DateEntry" xml:space="preserve">
+    <value>Data d'entrada</value>
+  </data>
+  <data name="Definition" xml:space="preserve">
+    <value>Definició</value>
+  </data>
+  <data name="Icon" xml:space="preserve">
+    <value>Icona</value>
+  </data>
+  <data name="Done" xml:space="preserve">
+    <value>Realitzat</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Estat</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Codi</value>
+  </data>
+  <data name="DefaultAnswer" xml:space="preserve">
+    <value>Resposta per defecte</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>Llistat</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Pregunta</value>
+  </data>
+  <data name="ListAnswer" xml:space="preserve">
+    <value>Llistat de respostes</value>
+  </data>
+  <data name="QuestionType" xml:space="preserve">
+    <value>Tipus pregunta</value>
+  </data>
+  <data name="AnswerListMandatory" xml:space="preserve">
+    <value>Llistat de resposta obligatòria</value>
+  </data>
+  <data name="AnswerListValue" xml:space="preserve">
+    <value>Valor del llistat de resposta</value>
+  </data>
+  <data name="CodAnswerListValue" xml:space="preserve">
+    <value>Codificació del llistat de resposta</value>
+  </data>
+  <data name="Necesity" xml:space="preserve">
+    <value>Components (necessitats)</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="RelDiagNoc" xml:space="preserve">
+    <value>Relació diagnòstic-Noc</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Data d'inici</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Usuari</value>
+  </data>
+  <data name="UsingNursingTasks" xml:space="preserve">
+    <value>Ús de tasques d'infermeria</value>
+  </data>
+  <data name="UsingPrescriptionAdministration" xml:space="preserve">
+    <value>Ús prescripció mèdica i administració</value>
+  </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Hores</value>
+  </data>
+  <data name="MonitoringDate" xml:space="preserve">
+    <value>Data de seguiment</value>
+  </data>
+  <data name="Every" xml:space="preserve">
+    <value>Cada</value>
+  </data>
+  <data name="ExtId" xml:space="preserve">
+    <value>Identificació externa</value>
+  </data>
+  <data name="DateBloqPass" xml:space="preserve">
+    <value>Data de bloqueig de password</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="NumColleg" xml:space="preserve">
+    <value>Núm. Col·legiat</value>
+  </data>
+  <data name="NumFailPass" xml:space="preserve">
+    <value>Contrasenya errònia</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Contrasenya</value>
+  </data>
+  <data name="DateSign" xml:space="preserve">
+    <value>Data signatura</value>
+  </data>
+  <data name="DoctorSigner" xml:space="preserve">
+    <value>Dr. Signant</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Ubicació</value>
+  </data>
+  <data name="NH" xml:space="preserve">
+    <value>NH</value>
+  </data>
+  <data name="ServiceResp" xml:space="preserve">
+    <value>Servei responsable</value>
+  </data>
+  <data name="Component" xml:space="preserve">
+    <value>Component</value>
+  </data>
+  <data name="Guide" xml:space="preserve">
+    <value>Guia</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Actiu</value>
+  </data>
+  <data name="Activities" xml:space="preserve">
+    <value>Activitats</value>
+  </data>
+  <data name="Public" xml:space="preserve">
+    <value>Públic</value>
+  </data>
+  <data name="Activity" xml:space="preserve">
+    <value>Actuació</value>
+  </data>
+  <data name="ActivityType" xml:space="preserve">
+    <value>Tipus de l'activitat</value>
+  </data>
+  <data name="Session" xml:space="preserve">
+    <value>Sessió</value>
+  </data>
+  <data name="NumDays" xml:space="preserve">
+    <value>Número de dies</value>
+  </data>
+  <data name="NumLines" xml:space="preserve">
+    <value>Número de línies</value>
+  </data>
+  <data name="RefTime" xml:space="preserve">
+    <value>Temps de refresc</value>
+  </data>
+  <data name="RegPag" xml:space="preserve">
+    <value>Registre de pàgina</value>
+  </data>
+  <data name="Appointment" xml:space="preserve">
+    <value>Actuació</value>
+  </data>
+  <data name="Line" xml:space="preserve">
+    <value>Pauta</value>
+  </data>
+  <data name="Prn" xml:space="preserve">
+    <value>PRN</value>
+  </data>
+  <data name="StarDate" xml:space="preserve">
+    <value>Data d'inici</value>
+  </data>
+  <data name="RevisedBy" xml:space="preserve">
+    <value>Revisat per</value>
+  </data>
+  <data name="Visible" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="Validator" xml:space="preserve">
+    <value>Validador</value>
+  </data>
+  <data name="UnitMeasureAbreviature" xml:space="preserve">
+    <value>UM</value>
+  </data>
+  <data name="DescriptionGroups" xml:space="preserve">
+    <value>Descripció per grups</value>
+  </data>
+  <data name="HighPercent" xml:space="preserve">
+    <value>% Alt</value>
+  </data>
+  <data name="NumCol" xml:space="preserve">
+    <value>Número de columnes</value>
+  </data>
+  <data name="WidthPercent" xml:space="preserve">
+    <value>% Ample</value>
+  </data>
+  <data name="VolTotalRequired" xml:space="preserve">
+    <value>Si vostè fixa el volum, es requereix valor</value>
+  </data>
+  <data name="Centre" xml:space="preserve">
+    <value>Centre</value>
+  </data>
+  <data name="DiagnosticInd" xml:space="preserve">
+    <value>Diagnòstic</value>
+  </data>
+  <data name="EconomicEntity" xml:space="preserve">
+    <value>Entitat</value>
+  </data>
+  <data name="EconomicResponsible" xml:space="preserve">
+    <value>Responsable</value>
+  </data>
+  <data name="EconomicType" xml:space="preserve">
+    <value>Tipus econòmic</value>
+  </data>
+  <data name="Origin" xml:space="preserve">
+    <value>Procedència</value>
+  </data>
+  <data name="RequestDate" xml:space="preserve">
+    <value>Data petició</value>
+  </data>
+  <data name="RequestDoctor" xml:space="preserve">
+    <value>Doctor demana</value>
+  </data>
+  <data name="RequestLevel" xml:space="preserve">
+    <value>Nivell de petició</value>
+  </data>
+  <data name="RequestService" xml:space="preserve">
+    <value>Departament de demanda</value>
+  </data>
+  <data name="CodeMnemonic" xml:space="preserve">
+    <value>Cod. Mnemotècnic</value>
+  </data>
+  <data name="DoctorValidate" xml:space="preserve">
+    <value>Validació Doctor</value>
+  </data>
+  <data name="ColumnSpan" xml:space="preserve">
+    <value>Salt de columna</value>
+  </data>
+  <data name="Private" xml:space="preserve">
+    <value>Privat</value>
+  </data>
+  <data name="VisibleInMP" xml:space="preserve">
+    <value>Agrupat in PM</value>
+  </data>
+  <data name="PlanHour" xml:space="preserve">
+    <value>Hora de planificació</value>
+  </data>
+  <data name="MedicalRecordName" xml:space="preserve">
+    <value>Nom del Informe mèdic</value>
+  </data>
+  <data name="ProductionUnit" xml:space="preserve">
+    <value>Unitat de Producció</value>
+  </data>
+  <data name="DatePublishing" xml:space="preserve">
+    <value>Data de publicació</value>
+  </data>
+  <data name="NormalityRef" xml:space="preserve">
+    <value>Val. normalitat</value>
+  </data>
+  <data name="StepRef" xml:space="preserve">
+    <value>Salt</value>
+  </data>
+  <data name="Breastfeeding" xml:space="preserve">
+    <value>Materna lactància</value>
+  </data>
+  <data name="LastPeriod" xml:space="preserve">
+    <value>Últim període</value>
+  </data>
+  <data name="Pregnancy" xml:space="preserve">
+    <value>Embaràs</value>
+  </data>
+  <data name="FluidBalanceFormulaDescte" xml:space="preserve">
+    <value>Descripció</value>
+  </data>
+  <data name="FluidBalanceFormulaValue" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="NursingTasks" xml:space="preserve">
+    <value>Tasques d'infermeria</value>
+  </data>
+  <data name="Medicaments" xml:space="preserve">
+    <value>Medicaments</value>
+  </data>
+  <data name="Necessities" xml:space="preserve">
+    <value>Necessitats</value>
+  </data>
+  <data name="Focus" xml:space="preserve">
+    <value>Focus</value>
+  </data>
+  <data name="FocusDate" xml:space="preserve">
+    <value>Data objectiu</value>
+  </data>
+  <data name="FocusNotedate" xml:space="preserve">
+    <value>Data nota</value>
+  </data>
+  <data name="EndedBy" xml:space="preserve">
+    <value>Acabat per</value>
+  </data>
+  <data name="FocusProgressNote" xml:space="preserve">
+    <value>Nota progrés</value>
+  </data>
+  <data name="RegisteredBy" xml:space="preserve">
+    <value>Registrat per</value>
+  </data>
+  <data name="MPDescLine" xml:space="preserve">
+    <value>Línia de prescripció mèdica</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Preu</value>
+  </data>
+  <data name="ExternalId" xml:space="preserve">
+    <value>Id Extern</value>
+  </data>
+  <data name="DAR" xml:space="preserve">
+    <value>DAR</value>
+  </data>
+  <data name="Unique" xml:space="preserve">
+    <value>Únic</value>
+  </data>
+  <data name="Resource" xml:space="preserve">
+    <value>Recurs</value>
+  </data>
+  <data name="Specialty" xml:space="preserve">
+    <value>Specialty</value>
+  </data>
+  <data name="TransferReason" xml:space="preserve">
+    <value>Motivo de trasllat</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="Age" xml:space="preserve">
+    <value>Edat</value>
+  </data>
+  <data name="BodyMassIndex" xml:space="preserve">
+    <value>Índex de massa corporal</value>
+  </data>
+  <data name="CIP" xml:space="preserve">
+    <value>CIP</value>
+  </data>
+  <data name="Creatinine" xml:space="preserve">
+    <value>Creatinina</value>
+  </data>
+  <data name="CreatinineClearance" xml:space="preserve">
+    <value>Aclariment de la creatinina</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>Alçada</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>Telèfon</value>
+  </data>
+  <data name="Weight" xml:space="preserve">
+    <value>Pes</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="Sign" xml:space="preserve">
+    <value>Signar</value>
+  </data>
+  <data name="Write" xml:space="preserve">
+    <value>Guardant</value>
+  </data>
+  <data name="ATMScore" xml:space="preserve">
+    <value>Puntuació ATM</value>
+  </data>
+  <data name="Bilaterality" xml:space="preserve">
+    <value>Bilateralitat</value>
+  </data>
+  <data name="CancelDate" xml:space="preserve">
+    <value>Data Cancel·lació</value>
+  </data>
+  <data name="CancelReason" xml:space="preserve">
+    <value>Motiu cancel·lació</value>
+  </data>
+  <data name="RiskGroup" xml:space="preserve">
+    <value>Grup de risc</value>
+  </data>
+  <data name="WaitListComments" xml:space="preserve">
+    <value>Observacions LEQ</value>
+  </data>
+  <data name="DischargeCircumstance" xml:space="preserve">
+    <value>Circumstància d'alta</value>
+  </data>
+  <data name="DischargeDestination" xml:space="preserve">
+    <value>Destinació d'alta</value>
+  </data>
+  <data name="BodySurface" xml:space="preserve">
+    <value>Superfície corporal</value>
+  </data>
+  <data name="BirthDate" xml:space="preserve">
+    <value>Data Naixe</value>
+  </data>
+  <data name="DeadCheck" xml:space="preserve">
+    <value>Ind. defunció</value>
+  </data>
+  <data name="DisCircum" xml:space="preserve">
+    <value>Circumstància alta</value>
+  </data>
+  <data name="DisDest" xml:space="preserve">
+    <value>Destinació d'alta</value>
+  </data>
+  <data name="DisTransKind" xml:space="preserve">
+    <value>Mitjà de sortida</value>
+  </data>
+  <data name="MedDiscCheck" xml:space="preserve">
+    <value>Ind. alta mèdica</value>
+  </data>
+  <data name="SignCollegialNumber1" xml:space="preserve">
+    <value>Núm. col·legiat signa 1</value>
+  </data>
+  <data name="SignCollegialNumber2" xml:space="preserve">
+    <value>Núm. col·legiat signa 2</value>
+  </data>
+  <data name="SignCollegialNumber3" xml:space="preserve">
+    <value>Núm. col·legiat signa 3</value>
+  </data>
+  <data name="DischargeTransportKind" xml:space="preserve">
+    <value>Mitjà de sortida</value>
+  </data>
+  <data name="ClinicalTrialIndicator" xml:space="preserve">
+    <value>Indicador assaig clínic</value>
+  </data>
+  <data name="NoRevivalIndicator" xml:space="preserve">
+    <value>Indicador no ressuscitació</value>
+  </data>
+  <data name="VitalTestamentIndicator" xml:space="preserve">
+    <value>Indicador testament vital</value>
+  </data>
+  <data name="AssistanceComments" xml:space="preserve">
+    <value>Observacions assistència</value>
+  </data>
+  <data name="AppointmentDate" xml:space="preserve">
+    <value>Data cita</value>
+  </data>
+  <data name="CancelReasonText" xml:space="preserve">
+    <value>Motiu cancel·lació text lliure</value>
+  </data>
+  <data name="SurgeryAgenda" xml:space="preserve">
+    <value>Recurs intervenció</value>
+  </data>
+  <data name="SurgeryComments" xml:space="preserve">
+    <value>Observacions intervenció</value>
+  </data>
+  <data name="SurgicalOrder" xml:space="preserve">
+    <value>Ordre intervenció</value>
+  </data>
+  <data name="WaitListDate" xml:space="preserve">
+    <value>Data entrada llista d'espera</value>
+  </data>
+  <data name="WaitListDiagnosis" xml:space="preserve">
+    <value>Diagnosi llista d'espera</value>
+  </data>
+  <data name="WaitListDiagnosisText" xml:space="preserve">
+    <value>Diagnosi llista d'espera text lliure</value>
+  </data>
+  <data name="WaitListProcedure" xml:space="preserve">
+    <value>Procediment llista d'espera</value>
+  </data>
+  <data name="WaitListProcedureText" xml:space="preserve">
+    <value>Procediment llista d'espera text lliure</value>
+  </data>
+  <data name="Condition" xml:space="preserve">
+    <value>Condició</value>
+  </data>
+  <data name="CodReason" xml:space="preserve">
+    <value>Cod.</value>
+  </data>
+  <data name="Nurse" xml:space="preserve">
+    <value>Infermera</value>
+  </data>
+  <data name="ReqAnatomZone" xml:space="preserve">
+    <value>Zona Anatòmica</value>
+  </data>
+  <data name="SamplingNature" xml:space="preserve">
+    <value>Tipus Mostra</value>
+  </data>
+  <data name="AnatomicZone" xml:space="preserve">
+    <value>Zona Anatòmica</value>
+  </data>
+  <data name="MeasureUnit" xml:space="preserve">
+    <value>Unitat de mesura</value>
+  </data>
+  <data name="LastChangeDate" xml:space="preserve">
+    <value>Data últim canvi</value>
+  </data>
+  <data name="LastChangeUser" xml:space="preserve">
+    <value>Usuari últim canvi</value>
+  </data>
+  <data name="PrescriberDoctor" xml:space="preserve">
+    <value>Doctor prescriptor</value>
+  </data>
+  <data name="ResponsibleDoctor" xml:space="preserve">
+    <value>Doctor responsable</value>
+  </data>
+  <data name="Reference" xml:space="preserve">
+    <value>Referència</value>
+  </data>
+  <data name="ReferenceShort" xml:space="preserve">
+    <value>Ref.</value>
+  </data>
+  <data name="RestrictionsShort" xml:space="preserve">
+    <value>Rest.</value>
+  </data>
+  <data name="Rules" xml:space="preserve">
+    <value>Regles</value>
+  </data>
+  <data name="DisplacementShort" xml:space="preserve">
+    <value>Desp(dd)</value>
+  </data>
+  <data name="Mnemonic" xml:space="preserve">
+    <value>Mnemònic</value>
+  </data>
+  <data name="InformedConsent" xml:space="preserve">
+    <value>Consentiment informat</value>
+  </data>
+  <data name="AddressCountry" xml:space="preserve">
+    <value>País adreça</value>
+  </data>
+  <data name="AddressProvince" xml:space="preserve">
+    <value>Província adreça</value>
+  </data>
+  <data name="AddressStreet" xml:space="preserve">
+    <value>Carrer adreça</value>
+  </data>
+  <data name="ChronicitySubType" xml:space="preserve">
+    <value>Subtipus cronicitat</value>
+  </data>
+  <data name="ChronicityType" xml:space="preserve">
+    <value>Tipus cronicitat</value>
+  </data>
+  <data name="ClinicalTrialText" xml:space="preserve">
+    <value>Assaig clínic text</value>
+  </data>
+  <data name="DeathDate" xml:space="preserve">
+    <value>Data defunció</value>
+  </data>
+  <data name="IdentificationNumber" xml:space="preserve">
+    <value>Número d'identificació</value>
+  </data>
+  <data name="NotRevivalText" xml:space="preserve">
+    <value>No ressuscitació text</value>
+  </data>
+  <data name="OwnerIndicator" xml:space="preserve">
+    <value>Indicador titular, beneficiari, pensionista</value>
+  </data>
+  <data name="PatientEconomicEntity" xml:space="preserve">
+    <value>Entitat econòmica pacient</value>
+  </data>
+  <data name="PatientEconomicResponsible" xml:space="preserve">
+    <value>Responsable econòmic pacient</value>
+  </data>
+  <data name="PatientEconomicType" xml:space="preserve">
+    <value>Tipus econòmic pacient</value>
+  </data>
+  <data name="SignUsername1" xml:space="preserve">
+    <value>Signatura usuari 1</value>
+  </data>
+  <data name="SignUsername2" xml:space="preserve">
+    <value>Signatura usuari 2</value>
+  </data>
+  <data name="SignUsername3" xml:space="preserve">
+    <value>Signatura usuari 3</value>
+  </data>
+  <data name="SocialSecurityNumber" xml:space="preserve">
+    <value>Número seguretat social</value>
+  </data>
+  <data name="VitalTestamentText" xml:space="preserve">
+    <value>Testament vital text</value>
+  </data>
+  <data name="TempExitReason" xml:space="preserve">
+    <value>Motiu permís</value>
+  </data>
+  <data name="AssistanceEconomicEntity" xml:space="preserve">
+    <value>Entitat econòmica assistència</value>
+  </data>
+  <data name="AssistanceEconomicResponsible" xml:space="preserve">
+    <value>Responsable econòmic assistència</value>
+  </data>
+  <data name="AssistanceEconomicType" xml:space="preserve">
+    <value>Tipus econòmic assistència</value>
+  </data>
+  <data name="AssistanceEndDate" xml:space="preserve">
+    <value>Data fi assistència</value>
+  </data>
+  <data name="AssistanceExpectedDischargeDate" xml:space="preserve">
+    <value>Data estimada fi assistència</value>
+  </data>
+  <data name="AssistanceResponsible" xml:space="preserve">
+    <value>Responsable assistència</value>
+  </data>
+  <data name="AssistanceResponsibleService" xml:space="preserve">
+    <value>Servei responsable assistència</value>
+  </data>
+  <data name="AssistanceStartDate" xml:space="preserve">
+    <value>Data inici assistència</value>
+  </data>
+  <data name="ProcessEndDate" xml:space="preserve">
+    <value>Data fi procés</value>
+  </data>
+  <data name="ProcessResponsible" xml:space="preserve">
+    <value>Responsable procés</value>
+  </data>
+  <data name="ProcessResponsibleService" xml:space="preserve">
+    <value>Servei responsable procés</value>
+  </data>
+  <data name="ProcessStartDate" xml:space="preserve">
+    <value>Data inici procés</value>
+  </data>
+  <data name="SourceHospital" xml:space="preserve">
+    <value>Hospital origen</value>
+  </data>
+  <data name="TriaggeCode" xml:space="preserve">
+    <value>Triagge </value>
+  </data>
+  <data name="Read" xml:space="preserve">
+    <value>Lectura</value>
+  </data>
+  <data name="Button" xml:space="preserve">
+    <value>Botó</value>
+  </data>
+  <data name="ActivityTime" xml:space="preserve">
+    <value>Durada activitat</value>
+  </data>
+  <data name="DaysBefore" xml:space="preserve">
+    <value>Dies d'antelació</value>
+  </data>
+  <data name="ExternalUser" xml:space="preserve">
+    <value>Usuari Extern</value>
+  </data>
+  <data name="ExternalUserShort" xml:space="preserve">
+    <value>Usuari Ext</value>
+  </data>
+  <data name="PrivateShort" xml:space="preserve">
+    <value>Priv</value>
+  </data>
+  <data name="VisibleInMPShort" xml:space="preserve">
+    <value>Grup</value>
+  </data>
+  <data name="ProtocolElement" xml:space="preserve">
+    <value>Element de Protocol</value>
+  </data>
+  <data name="DurationDD" xml:space="preserve">
+    <value>Durada(dd)</value>
+  </data>
+  <data name="ColPeriodFreq" xml:space="preserve">
+    <value>Period./Freq.</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>Productes</value>
+  </data>
+  <data name="Route" xml:space="preserve">
+    <value>Via</value>
+  </data>
+  <data name="EducationSheet" xml:space="preserve">
+    <value>Full d'educació</value>
+  </data>
+  <data name="Alerts" xml:space="preserve">
+    <value>Alertes</value>
+  </data>
+  <data name="ScreenDesc" xml:space="preserve">
+    <value>Procés</value>
+  </data>
+  <data name="ValidityHours" xml:space="preserve">
+    <value>Hores de validesa</value>
+  </data>
+  <data name="ValidityType" xml:space="preserve">
+    <value>Tipus de validació</value>
+  </data>
+  <data name="Cse" xml:space="preserve">
+    <value>CSE</value>
+  </data>
+  <data name="ExecConditions" xml:space="preserve">
+    <value>Condicions d'Execució</value>
+  </data>
+  <data name="ExecConditionsShort" xml:space="preserve">
+    <value>Execució</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Missatge</value>
+  </data>
+  <data name="DosageFactor" xml:space="preserve">
+    <value>Factor de Dosif</value>
+  </data>
+  <data name="DisplacementShortHH" xml:space="preserve">
+    <value>Desp(hh)</value>
+  </data>
+</root>

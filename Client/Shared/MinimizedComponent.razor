@@ -1,0 +1,58 @@
+﻿<div class=@("minimized" + " " + classForDimension)>
+    <div class="minimizedtitle d-flex  justify-content-end bg-dark">
+        <button type="button" @onclick="OnMazimized"><i class="far fa-window-maximize"></i></button>
+    </div>
+    <div class="minimizedcontent">
+        @if (Content == null)
+        {
+            <p>Is Empty</p>
+        }
+        else
+        {
+            @Content
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public RenderFragment Content
+    {
+        get; set;
+    }
+    [Parameter]
+    public string NavigateOnMax { get; set; }
+    [Parameter]
+    public int Cantidad { get; set; }
+    [Parameter]
+    public int Number { get; set; }
+    string classForDimension = null;
+    protected override void OnInitialized()
+    {
+        switch (Cantidad)
+        {
+            case 1:
+                classForDimension = "col-12";
+                break;
+            case 3:
+                if (Number == 1)
+                    classForDimension = "col-12";
+                else
+                    classForDimension = "col-6";
+                break;
+            default:
+                classForDimension = "col-6";
+                break;
+        }
+
+
+
+    }
+
+    private void OnMazimized()
+    {
+        classForDimension = "maximized col-12";
+    }
+}
+
+

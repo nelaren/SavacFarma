@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<efcore namespace="SavacFarma_Shared" p1:Guid="2b03f805-8d33-4f51-b9dd-eb46d106274c" xmlns:p1="http://devart.com/schemas/EntityDeveloper/1.0">
+  <class name="Usuario" entity-set="Usuarios" table="Usuario" schema="dbo" p1:Guid="f17100cf-db35-491e-aae3-6c76ddb7997a">
+    <id name="Id" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="7512cd2b-4493-454d-824e-7ae933b3f31c">
+      <column name="Id" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </id>
+    <property name="UserName" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="706272e4-2f8d-4e5d-a34b-4dff39081dc1">
+      <column name="UserName" not-null="True" length="50" sql-type="varchar" p1:unicode="False" />
+    </property>
+    <property name="Password" type="String" p1:ValidateMaxLength="20" p1:ValidateRequired="true" p1:Guid="c4104b5f-0122-4013-a1f9-fddecfbee945">
+      <column name="Password" not-null="True" length="20" sql-type="varchar" p1:unicode="False" />
+    </property>
+    <property name="CultureInfo" type="String" p1:ValidateMaxLength="5" p1:ValidateRequired="true" p1:Guid="eff30bbc-33c6-4952-a1a0-36925826c230">
+      <column name="CultureInfo" default="'es-ES'" not-null="True" length="5" sql-type="varchar" p1:unicode="False" />
+    </property>
+  </class>
+  <class name="WeatherForeCast" entity-set="WeatherForeCasts" table="WeatherForeCast" schema="dbo" p1:Guid="52015675-ee66-409f-9a49-076928daa11e">
+    <id name="Id" type="Int64" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="dff1cc83-4983-4184-a21d-0944678de8b8">
+      <column name="Id" not-null="True" precision="19" scale="0" sql-type="bigint" p1:unicode="False" />
+    </id>
+    <property name="Date" type="DateTime" p1:ValidateRequired="true" p1:Guid="ca7a7fc1-8401-4b37-ba86-6a3ccca333fd">
+      <column name="Date" not-null="True" sql-type="datetime" p1:unicode="False" />
+    </property>
+    <property name="TemperatureC" type="Int32" p1:ValidateRequired="true" p1:Guid="c6208cac-1980-4d6d-b44c-ce604259f2ca">
+      <column name="TemperatureC" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </property>
+    <property name="Summary" type="String" p1:nullable="True" p1:ValidateMaxLength="100" p1:ValidateRequired="false" p1:Guid="852bc29e-d430-44f5-a181-9cdf27d7b36a">
+      <column name="Summary" not-null="False" length="100" sql-type="varchar" p1:unicode="False" />
+    </property>
+  </class>
+  <class name="Process" entity-set="Processes" table="Process" schema="dbo" p1:Guid="e9d99bf1-755d-43bf-a0b1-a7ab3e857c67">
+    <id name="IdProcess" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="ed6ffd61-74e5-46da-88ce-9453c28ecb83">
+      <column name="IdProcess" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </id>
+    <property name="IdParent" type="Int32" p1:nullable="True" p1:ValidateRequired="false" p1:Guid="e06d7655-3e4c-42b0-91b4-28d01bbef637">
+      <column name="IdParent" not-null="False" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </property>
+    <property name="DesProcess" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="ebba5789-d4f9-4297-9895-8e915941943f">
+      <column name="DesProcess" not-null="True" length="50" sql-type="nvarchar" p1:unicode="True" />
+    </property>
+    <property name="ProcessType" type="Int32" p1:ValidateRequired="true" p1:Guid="eb128cbf-7db1-42dc-aefa-865eafb55e16">
+      <column name="ProcessType" default="1" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </property>
+  </class>
+  <class name="UserProcess" entity-set="UserProcesses" table="UserProcess" schema="dbo" p1:Guid="f2800408-ded0-4c54-82e4-4929b50f24e2">
+    <composite-id>
+      <key-property name="IdUser" type="Int32" p1:ValidateRequired="true" p1:Guid="f355f8a9-3c62-40b4-bf1e-f84f952b338b">
+        <column name="IdUser" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+      </key-property>
+      <key-property name="IdProcess" type="Int32" primary-key-index="1" p1:ValidateRequired="true" p1:Guid="43e9a9f6-2ed2-454c-a84e-4626346d80e8">
+        <column name="IdProcess" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+      </key-property>
+    </composite-id>
+  </class>
+  <class name="Ubication" entity-set="Ubications" table="Ubication" schema="dbo" p1:Guid="c1d235a8-e567-4752-9f12-89b38ef04ff4">
+    <id name="Id" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="2674ce3f-2fdf-4fee-bbb5-1b243e6601fd">
+      <column name="Id" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </id>
+    <property name="DesUbication" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="cfef5ee6-b8b7-4b8f-acd2-7b18df55533c">
+      <column name="DesUbication" not-null="True" length="50" sql-type="varchar" p1:unicode="False" />
+    </property>
+    <property name="IdUbicationGroup" type="Int32" p1:ValidateRequired="true" p1:Guid="75eb4dd8-a733-4909-9148-fac3531e8f76">
+      <column name="IdUbicationGroup" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </property>
+    <property name="State" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="ccfd48dd-6b4f-487f-99fd-772286357f1f">
+      <column name="State" default="'Libre'" not-null="True" length="50" sql-type="varchar" p1:unicode="False" />
+    </property>
+  </class>
+  <class name="UbicationGroup" entity-set="UbicationGroups" table="UbicationGroup" schema="dbo" p1:Guid="2dd4aee1-e493-4a64-9cfc-8c915ed74529">
+    <id name="Id" type="Int32" value-generated="OnAdd" p1:ValidateRequired="true" p1:Guid="03599214-7f26-4eb7-b5b4-963431a6379e">
+      <column name="Id" not-null="True" precision="10" scale="0" sql-type="int" p1:unicode="False" />
+    </id>
+    <property name="DesGroupUbication" type="String" p1:ValidateMaxLength="50" p1:ValidateRequired="true" p1:Guid="44cc3a99-6b82-4b6b-992b-b746f1136773">
+      <column name="DesGroupUbication" not-null="True" length="50" sql-type="varchar" p1:unicode="False" />
+    </property>
+  </class>
+  <associations>
+    <association name="Usuario_UserProcess" cardinality="OneToMany" p1:Guid="bdd2f0a0-8a21-4e5b-b408-37b48cc36336">
+      <end1 multiplicity="One" name="Usuario" class="UserProcess" relation-class="Usuario" constrained="True" lazy="False" p1:Guid="baa08edb-47a2-4de8-913f-e13093294e1b">
+        <property name="Id" />
+      </end1>
+      <end2 multiplicity="Many" name="UserProcesses" class="Usuario" relation-class="UserProcess" lazy="False" p1:Guid="1ba66f16-8573-4e2c-be5d-c9318cdfd9f4">
+        <property name="IdUser" />
+      </end2>
+    </association>
+    <association name="Process_UserProcess" cardinality="OneToMany" p1:Guid="24575b27-6d42-4b88-87fc-35c8cdc23e29">
+      <end1 multiplicity="One" name="Process" class="UserProcess" relation-class="Process" constrained="True" lazy="False" p1:Guid="4adb7842-b4b1-440c-a43c-2049355c3309">
+        <property name="IdProcess" />
+      </end1>
+      <end2 multiplicity="Many" name="UserProcesses" class="Process" relation-class="UserProcess" lazy="False" p1:Guid="e83760b1-34ee-4510-b2ff-7a79ce51d927">
+        <property name="IdProcess" />
+      </end2>
+    </association>
+    <association name="UbicationGroup_Ubication" cardinality="OneToMany" p1:Guid="d22b7815-0b6b-4d49-8914-eb5ba2538118">
+      <end1 multiplicity="One" name="UbicationGroup" class="Ubication" relation-class="UbicationGroup" constrained="True" lazy="False" p1:Guid="628ffcdb-b8cb-425b-8a59-2cfe58227b34">
+        <property name="Id" />
+      </end1>
+      <end2 multiplicity="Many" name="Ubications" class="UbicationGroup" relation-class="Ubication" lazy="False" p1:Guid="64a7534b-524a-4b02-aed3-788514f12458">
+        <property name="IdUbicationGroup" />
+      </end2>
+    </association>
+  </associations>
+  <method name="MiFunc" p1:procedure="dbo.MiFunc" p1:table-valued-function="true" p1:Guid="62ce61db-939d-4835-b3d4-6985007383c7">
+    <return class="WeatherForeCast" />
+    <parameter name="minf" type="Int32" sql-type="int" precision="10" scale="0" />
+    <parameter name="maxf" type="Int32" sql-type="int" precision="10" scale="0" />
+  </method>
+</efcore>

@@ -1,0 +1,26 @@
+﻿@inherits LayoutComponentBase
+@using SavacFarma.Shared.Resources
+@inject IToastService toastService
+
+
+@using Blazored.Toast.Configuration
+
+<BlazoredToasts Position="ToastPosition.BottomRight"
+                Timeout="10"
+                IconType="IconType.Material"
+                ErrorIcon="error_outline"
+                InfoIcon="school"
+                SuccessIcon="done_outline"
+                WarningIcon="warning" 
+                ShowProgressBar="@true" />
+
+
+    <div class="LoginBGI w-100 img-fluid">
+        @Body
+    </div>
+
+    @code {
+        
+       
+
+    }

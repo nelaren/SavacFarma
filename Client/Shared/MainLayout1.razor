@@ -1,0 +1,40 @@
+﻿@inherits LayoutComponentBase
+@inject SavacFarma.Client.Shared.Auth.TokenRenovator _tokenRenovator
+@inject IJSRuntime _js
+@inject NavigationManager _navigationManager
+@using Microsoft.JSInterop
+
+<TelerikRootComponent>
+    <div class="sidebar1">
+        <MenuT />
+    </div>
+
+    <div class="main">
+        <div class="top-row px-4 sidebarTopRow border-0 d-md-flex">
+            <a href="http://blazor.net" target="_blank" class="ml-md-auto text-light">About</a>
+        </div>
+
+        <div class="content px-4">
+            @Body
+        </div>
+    </div>
+</TelerikRootComponent>
+
+@code
+{
+        [CascadingParameter] public Task<AuthenticationState> AuthenticationState {get;set;}
+        protected override void OnInitialized()
+        {
+            await js.InitializetimerNoActive(DotNetObjectReference.Create(this));
+            _tokenRenovator.Start();
+        }
+
+        [JsInvokable]
+        public async Task Logout()
+        {
+            var authState = await AuthenticationState;
+            if (authState.User.Identity.IsAuthenticated)
+                _navigationManager.Navigate("logout");
+        }
+
+}

@@ -1,0 +1,19 @@
+﻿@inject ILocalizationManager _loc
+<AuthorizeView>
+    <Authorized Context="user">
+        <TelerikTooltip TargetSelector="div a[title]">
+        </TelerikTooltip>
+        <div @attributes="OtherProperties">
+            <span class="text-light d-none d-md-inline">@(string.Format("{0}, {1}!!", _loc["AppStrings.Greetings"], user.User.Identity.Name))</span>
+            <a href="Logout" title=@_loc["AppStrings.Logout"]
+               class="k-button k-primary k-bg-info">
+                <i class="fas fa-sign-out-alt"></i>
+            </a>
+        </div>
+    </Authorized>
+</AuthorizeView>
+@code { 
+    [Parameter(CaptureUnmatchedValues = true)]
+    public IDictionary<string, object> OtherProperties { get; set; } 
+}
+

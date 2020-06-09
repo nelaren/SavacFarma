@@ -1,0 +1,152 @@
+﻿@page "/menutelerik"
+@inject IToastService toasService
+@inject IRepositorio repositorio
+
+@if (MenuItems != null)
+{
+    <TelerikMenu Data="@MenuItems" IconField="TelerikIcon" UrlField="UrlField" Orientation="MenuOrientation.Vertical"
+                 OnClick="@((MenuItem item) => OnClickHandler(item))">
+        <ItemTemplate Context="item">
+            <TelerikTooltip TargetSelector="a span[title]">
+            </TelerikTooltip>
+            <a href="@(item.UrlField)" class="d-flex">
+                <span title="@(item.Text)" class="pt-1 k-icon k-i-@(item.TelerikIcon)">
+                </span>
+                <div class="pl-2 d-none d-md-inline-block mimenutext">@(item.Text)</div>
+            </a>
+        </ItemTemplate>
+    </TelerikMenu>
+}
+else
+{
+    <p class="text-light">Cargando datos</p>
+}
+@code {
+    protected void OnClickHandler(MenuItem item)
+    {
+        //LastActivatedItem = item;
+    }
+
+
+    public List<MenuItem> MenuItems { get; set; } = new List<MenuItem>();
+    List<Process> processes { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        //    MenuItems = new List<MenuItem>()
+        //{
+        //            new MenuItem()
+        //            {
+        //                Text = "Item 1",
+        //                Items = new List<MenuItem>()
+        //                {
+        //                    new MenuItem()
+        //                    {
+        //                        Text = "Item 1.1"
+        //                    },
+        //                    new MenuItem()
+        //                    {
+        //                        Text = "Item 1.2",
+        //                        Items = new List<MenuItem>()
+        //                        {
+        //                            new MenuItem()
+        //                            {
+        //                                Text = "Item 1.2.1",
+        //                                UrlField ="counter"
+        //                            },
+        //                            new MenuItem()
+        //                            {
+        //                                Text = "Item 1.2.2"
+        //                            }
+        //                        }
+        //                    }
+        //                }
+        //            },
+        //            new MenuItem()
+        //            {
+        //                Text = "Item 2",
+        //                Items = new List<MenuItem>()
+        //                {
+        //                    new MenuItem()
+        //                    {
+        //                        Text = "Item 2.1",
+        //                        Items = new List<MenuItem>()
+        //                        {
+        //                            new MenuItem()
+        //                            {
+        //                                Text = "Item 2.1.1"
+        //                            }
+        //                        }
+        //                    },
+        //                    new MenuItem()
+        //                    {
+        //                        Text = "Item 2.2"
+        //                    }
+        //                }
+        //            },
+        //            new MenuItem()
+        //            {
+        //                Text = "Item 3"
+        //            }
+        //        };
+        await GetProcesses();
+        CreaTree();
+    }
+
+    void CreaTree()
+    {
+
+        foreach (var item in processes.Where(p => p.IdParent == null))
+        {
+            MenuItems.Add(
+            new MenuItem() { Text = item.DesProcess, Tipo = item.ProcessType, idItem = item.IdProcess, TelerikIcon = "thumbnails-left" }
+            );
+        }
+
+
+        var allmenus = MenuItems.ToList();
+        foreach (var z in processes.Where(p => p.IdParent != null).OrderBy(p => p.IdParent))
+        {
+
+            if (z != null)
+            {
+                var parent = allmenus.First(k => k.idItem == z.IdParent);
+                if (parent.Items == null)
+                    parent.Items = new List<MenuItem>();
+                var item = new MenuItem() { Text = z.DesProcess, Tipo = z.ProcessType, idItem = z.IdProcess };
+                switch (item.Tipo)
+                {
+                    case 1:
+                        item.TelerikIcon= "thumbnails-left";
+                        break;
+                    case 2:
+                        item.TelerikIcon = "borders-show-hide";
+                        break;
+                    default:
+                        item.TelerikIcon = "cogs";
+                        item.UrlField = "counter";
+                        break;
+
+                }
+                parent.Items.Add(item);
+                allmenus.Add(item);
+            }
+        }
+    }
+
+    async Task GetProcesses()
+    {
+        var httpResponse = await repositorio.Get<List<Process>>("api/Processes");
+        if (httpResponse.Error)
+        {
+            var body = httpResponse.HttpResponseMessage.Content.ReadAsStringAsync();
+            toasService.ShowError(body.ToString());
+
+        }
+        else
+        {
+            processes = httpResponse.Response.ToList();
+
+        }
+    }
+}

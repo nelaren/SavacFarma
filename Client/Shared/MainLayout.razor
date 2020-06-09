@@ -1,0 +1,60 @@
+﻿@inherits LayoutComponentBase
+
+@inject IJSRuntime _js
+@inject NavigationManager _navigationManager
+@inject ILocalizationManager _loc
+
+
+
+    <TelerikRootComponent>
+        <div class="sidebar1">
+            <MiMenu OnCollapsedMenu="@OnCollapsedMenu" MenuCollapsed="@collapsedMenu"/>
+        </div>
+
+        <div class="main">
+
+            <header class="top-row pr-4 sidebarTopRow border-0 d-md-flex">
+                <EnlacesMain></EnlacesMain>
+                <a href="http://blazor.net" target="_blank" class="ml-md-auto btn btn-link text-light">About</a>
+            </header>
+
+            <div class="content" >
+                @Body
+            </div>
+
+        </div>
+
+    </TelerikRootComponent>
+
+@code
+{
+    private bool collapsedMenu;
+
+    private string bodyMargen = "";
+
+
+    async Task OnCollapsedMenu(bool param)
+    {
+        bodyMargen = param ? "margin-left: -6rem;" : "";
+    }
+
+
+    [CascadingParameter] public Task<AuthenticationState> AuthenticationState { get; set; }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        await _js.InitializetimerNoActive(DotNetObjectReference.Create(this), 1000 * 60 * 5);
+    }
+
+    [JSInvokable]
+    public async Task Logout()
+    {
+        var authState = await AuthenticationState;
+        if (authState.User.Identity.IsAuthenticated)
+            _navigationManager.NavigateTo("logout");
+    }
+
+
+
+}

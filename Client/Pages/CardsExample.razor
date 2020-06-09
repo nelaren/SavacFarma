@@ -1,0 +1,90 @@
+﻿@page  "/"
+@inject IRepositorio repositorio
+@if (ubications == null)
+{
+    @*<p>Loading data...</p>*@
+    <ul class="mapadecamas d-flex flex-wrap">
+        @*<Counter Minimized="minimized" />
+        <FetchData Minimized="minimized" />*@
+        @for (var i = 1; i <= 3; i++)
+        {
+            if (i % 2 == 0)
+            {
+                @*<UbicationComponent />*@
+                
+                    <MinimizedComponent NavigateOnMax="fechdata" Cantidad=3 Number=i>
+                        <Content>
+                            <FetchData />
+                        </Content>
+                    </MinimizedComponent>
+                
+            }
+            else
+            {
+                
+                <MinimizedComponent NavigateOnMax="counter" Cantidad=3 Number=i>
+                    <Content>
+                        <Counter />
+                    </Content>
+                </MinimizedComponent>
+                
+            }
+        }
+    </ul>
+
+}
+else
+{
+    <ul class="mapadecamas">
+        @*<Counter Minimized="minimized" />
+            <FetchData Minimized="minimized" />*@
+        @for (var i = 1; i < 3; i++)
+        {
+            if (i % 2 == 0)
+            {
+                @*<UbicationComponent />*@
+                <MinimizedComponent NavigateOnMax="fetchdata" Cantidad=2 Number=i>
+                    <Content>
+                        <FetchData />
+                    </Content>
+                </MinimizedComponent>
+            }
+            else
+            {
+                <MinimizedComponent NavigateOnMax="counter" Cantidad=2 Number=i>
+                    <Content>
+                        <Counter />
+                    </Content>
+                </MinimizedComponent>
+            }
+        }
+    </ul>
+}
+
+@code {
+
+    List<Ubication> ubications;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetUbicationsByGroup(2);
+    }
+
+    async Task GetUbicationsByGroup(int idGroup)
+    {
+        //forecasts = await ForecastService.GetForecastListAsync(DateTime.Now);
+
+        //var httpResponse = await repositorio.Get<List<WeatherForeCast>>("api/Weather/filterTemp?maxTemp=50&minTemp=5");
+        //var httpResponse = await repositorio.Get<List<Ubication>>("api/Ubications/?idGroup=" + idGroup.ToString());
+        //if (httpResponse.Error)
+        //{
+        //    var body = httpResponse.HttpResponseMessage.Content.ReadAsStringAsync();
+        //    Console.WriteLine(body);
+        //}
+        //else
+        //{
+
+        //    ubications = httpResponse.Response;
+        //}
+    }
+}

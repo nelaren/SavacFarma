@@ -1,0 +1,48 @@
+﻿@page "/login"
+@using System.Web;
+@using Microsoft.AspNetCore.Components.Authorization
+@using SavacFarma.Shared.DTOs
+@inject IRepositorio repositorio
+@inject NavigationManager navigationManager
+@inject ILoginService loginService
+@inject IToastService toastService
+@inject ILocalizationManager loc
+
+
+    <EditForm Model="@userInfo" OnValidSubmit="LoginUsuario">
+        <DataAnnotationsValidator />
+        <div class="loginform d-inline">
+            <input type="text"
+                   placeholder=@loc["AppStrings.UserName"]
+                   @bind="@userInfo.Usuario" />
+            &nbsp;&nbsp;
+            <br />
+            <input type="password" class="mt-1"
+                   placeholder=@loc["AppStrings.Password"]
+                   @bind="@userInfo.Password" />
+            <button class="k-button k-primary k-bg-info" type="submit" >
+                <i class="fas fa-sign-in-alt"></i>
+            </button>
+        </div>
+    </EditForm>
+
+
+        @code {
+            private UserInfo userInfo = new UserInfo();
+
+            private async Task LoginUsuario()
+            {
+                var httpResponse = await repositorio.Post<UserInfo, UserToken>("api/usuarios/login", userInfo);
+
+                if (httpResponse.Error)
+                {
+                    string message = await httpResponse.GetBody();
+                    toastService.ShowError(loc["AppStrings.UserNotExists"]);
+                }
+                else
+                {
+                    await loginService.Login(httpResponse.Response);
+                    navigationManager.NavigateTo("cardsexample",forceLoad:true);
+                }
+            }
+        }
